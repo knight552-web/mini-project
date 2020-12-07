@@ -1,0 +1,47 @@
+<%- include('header') %>
+<nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+<a class="navbar-brand" href="firstpage">Chat</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/Login">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/demo">Demo</a>
+    </li>
+		<li class="nav-item">
+        <a class="nav-link" href="/logout">Home</a>
+    </li>
+</ul>
+</div>
+</nav>
+<hr>
+<div id="myid"></div>
+<script type="text/babel">
+class ReadName extends React.Component
+{
+constructor(props)
+{
+super(props);
+this.state={value:""}
+}
+handleChange=function(event){this.setState({value:event.target.value})}
+handleSubmit=function(event){console.log("the name entered was:" +this.state.value);
+event.preventDefault();}
+render()
+{
+return (<form onSubmit={this.handleSubmit.bind(this)}>
+		<input type="text" onChange={this.handleChange.bind(this)} value={this.state.value}/>
+		<input type="submit" value="SUBMIT"/>
+		</form>)
+}
+}
+ReactDOM.render(<ReadName/>,document.getElementById("myid"));
+</script>
+<%- include('footer') %>

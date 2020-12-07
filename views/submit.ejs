@@ -1,0 +1,13 @@
+<%- include('header') %>
+  <div class="jumbotron centered">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Secrets</h1>
+    <h6>Don't keep your secrets, share them so that people can know that they are not alone!</h6>
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?" maxlength="50">
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+<%- include('footer') %>

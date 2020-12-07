@@ -1,0 +1,43 @@
+
+.example-appear {
+   opacity: 0.04;
+}
+.example-appear.example-appear-active {
+   opacity: 2;
+   transition: opacity 50s ease-in;
+}
+
+body {
+    background-color:#FFCC99;
+}
+
+.centered
+{
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2.5rem;
+  color:white;
+  background-color:black;
+}
+
+.navbar{
+  padding-bottom:0 0 4.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size:2.5rem;
+  font-weight:bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav link{
+  font-size: 1.2rem;
+  font-family: "Montserrant-Light";
+}

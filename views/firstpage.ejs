@@ -1,0 +1,34 @@
+<%- include('header') %>
+<nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+<a class="navbar-brand" href="">Chat</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/Login">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/demo">Demo</a>
+    </li>
+</ul>
+</div>
+</nav>
+<div class="jumbotron centered">
+    <i class="fa fa-user-secret fa-9x" aria-hidden="true"></i>
+    <h1 class="display-3">Secrets</h1>
+    <p class="lead">Don't keep your secrets, share them so that people can know that they are not alone!</p>
+    <p>
+      <h3>But if you are still not ready please go to the demo section to have a feel as to how it feels to open up about your secrets</h3>
+      <h4> Don't worry the demo is not a trick.Anything that you type will not be submitted</h4>
+    </p>
+    <hr>
+    <a class="btn btn-success btn-lg" href="/register" role="button" >Register</a>
+    <a class="btn btn-info btn-lg" href="/login" role="button">Login</a>
+    <a class="btn btn-warning btn-lg" href="/demo" role="button">Demo</a>
+</div>
+<%- include('footer') %>
